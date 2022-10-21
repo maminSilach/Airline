@@ -57,7 +57,7 @@ public class ControllerForUser {
         if(bindingResult.hasErrors()){
             return "registration";
         }
-        service.saveUser(user); // обработать ошибку, ошибка дает false емли такой email уже зареган
+        service.saveUser(user); 
         return "redirect:/airline/";
     }
 
